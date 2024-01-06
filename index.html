@@ -8,17 +8,42 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
     />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Raleway:wght@700&family=Roboto:wght@400;500;700&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
     <!-- HEADER -->
-    <header class="main-header"></header>
+    <header class="main-header">
+      <div class="container header-container">
+        <a class="logo" href="./index.html">Brit<span class="accent-color">lex</span></a>
+        <nav class="navigation-header">
+        
+          <ul class="menu">
+            
+            <li class="menu-items"><a class="menu-link" href="./index.html">Home</a></li>
+            <li class="menu-items"><a class="menu-link" href="id=skills">Skills</a></li>
+            <li class="menu-items"><a class="menu-link" href="id=about-us">About Us</a></li>
+            <li class="menu-items"><a class="menu-link" href="id=pricing">Pricing</a></li>
+            <li class="menu-items"><a class="menu-link" href="id=contacts">Contacts</a></li>
+          </ul>
+          <button class="header-lets-talk" type="button">Let&apos;s Talk
+          </button>
+        </nav>
+        
+        <button class="mobile-menu-open-btn-icon" type="button">
+          <svg
+            class="mobile-menu-open-btn-icon"
+            width="33.529px"
+            height="19px"
+            aria-label="mobile menu open"
+          >
+            <use href="./images/spryte.svg#icon-burger-menu"></use>
+          </svg>
+        </button>
+      </div>
+    </header>
     <main class="main-header"></main>
     <footer class="footer-wrapper"></footer>
   </body>

@@ -35,7 +35,9 @@ height: auto;
 }
 
 body {
-background-color: #FFF;
+background-color: #FFFFFF;
+color: #263238;
+font-family: 'Poppins', sans-serif;
 }
 
 *,
@@ -57,12 +59,56 @@ clip: rect(0 0 0 0);
 overflow: hidden;
 }
 
-@media screen and (max-width: 767px) {
+.container {
+max-width: 320px;
+padding: 0 15px;
+margin: 0 auto;
+}
+
+/* @media screen and (max-width: 767px) {
 .container {
     max-width: 375px;
     margin: 0 auto;
     padding: 0 15px;
 }
+} */
+
+/* HEADER */
+
+.header-container {
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding-top: 36px;
+padding-bottom: 29px;
+}
+
+.logo {
+color: #000;
+font-size: 24px;
+font-weight: 400;
+line-height: normal;
+}
+
+.accent-color {
+color: #939393;
+}
+
+.mobile-menu-open-btn-icon {
+background-color: transparent;
+border: none;
+padding: 0;
+line-height: 0;
+display: flex;
+align-items: center;
+}
+
+.menu {
+display: none;
+}
+
+.header-lets-talk {
+display: none;
 }
 
 /* Планшети (з 768px) */
@@ -70,24 +116,93 @@ overflow: hidden;
 .container {
     max-width: 768px;
     margin: 0 auto;
-    padding: 0 15px;
-}
+    padding: 0 24px;
 }
 
-/* Десктоп (з 1280px) */
-@media screen and (min-width: 1280px) {
+.header-container {
+padding-top: 36px;
+}
+
+.mobile-menu-open-btn-icon {
+width: 30px;
+height: 17px;
+}
+
+.logo {
+font-size: 30px;
+}
+
+}
+
+/* Десктоп (з 1378px) */
+@media screen and (min-width: 1378px) {
 .container {
-    max-width: 1280px;
+    max-width: 1378px;
     margin: 0 auto;
-    padding: 0 15px;
-}
+    padding: 0 20px;
 }
 
-/* Десктоп (з 1440px) */
+.logo {
+font-size: 36px;
+}
+
+.navigation-header {
+display: flex;
+align-items: center;
+width: 996px;
+
+}
+
+.menu {
+    display: flex;
+    gap: 50px;
+    margin-right: 121px;
+    }
+
+/* .menu-items {
+    width: calc((100% - 200px) / 5)
+} */
+
+.menu-link {
+padding: 75px 0;
+display: block;
+}
+
+.menu-link {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: normal;
+    color: #263238;
+}
+
+.header-lets-talk {
+display: block;   
+width: 312px;
+height: 70px;
+border-radius: 10px;
+border: 2px solid #263238;
+background-color: transparent;
+color: #000;
+text-align: center;
+font-size: 20px;
+font-weight: 400;
+line-height: normal;
+letter-spacing: 0.03em;
+}
+
+.mobile-menu-open-btn-icon {
+display: none;
+}
+
+
+
+}
+
+/* Десктоп (з 1440px)
 @media screen and (min-width: 1440px) {
 .container {
     max-width: 1440px;
     margin: 0 auto;
     padding: 0 15px;
 }
-}
+} */
