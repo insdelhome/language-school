@@ -18,9 +18,8 @@
     <!-- HEADER -->
     <header class="main-header">
       <div class="container header-container">
-        <a class="logo" href="./index.html">Brit<span class="accent-color">lex</span></a>
         <nav class="navigation-header">
-        
+          <a class="logo" href="./index.html">Brit<span class="accent-color">lex</span></a>
           <ul class="menu">
             
             <li class="menu-items"><a class="menu-link" href="./index.html">Home</a></li>
@@ -29,10 +28,10 @@
             <li class="menu-items"><a class="menu-link" href="id=pricing">Pricing</a></li>
             <li class="menu-items"><a class="menu-link" href="id=contacts">Contacts</a></li>
           </ul>
-          <button class="header-lets-talk" type="button">Let&apos;s Talk
-          </button>
+          
         </nav>
-        
+        <button class="header-lets-talk" type="button">Let&apos;s Talk
+        </button>
         <button class="mobile-menu-open-btn-icon" type="button">
           <svg
             class="mobile-menu-open-btn-icon"
@@ -45,7 +44,56 @@
         </button>
       </div>
     </header>
-    <main class="main-header"></main>
+    <!-- TITLE -->
+    <main>
+      <!-- HERO -->
+      <section class="section-one">
+        <div class="container hero-container">
+          <picture class="hero-img">
+                  <source
+                    srcset="
+                      ./images/hero/learning-languages-deckstop.png    1x,
+                      ./images/hero/learning-languages-deckstop@2x.png 2x
+                    "
+                    media="(min-width: 1378px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/hero/learning-languages-bro-tablet.png    1x,
+                      ./images/hero/learning-languages-bro-tablet@2x.png 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="./images/hero/learning-languages-bro.png 1x,
+                    ./images/hero/learning-languages-bro@2x.png 2x
+                    "
+                    media="(max-width: 767px)"
+                  />
+                  <img
+                    src="./images/hero/learning-languages-bro.png"
+                    alt="language school"
+                  />
+                </picture>
+                <div class="hero-text-container">
+          <h1 class="hero-header"><span class="header-par-span">Learn</span> Any Foreign Language</h1>
+          <svg
+            class="hero-icon-bulb"
+            width="50.95px"
+            height="50.95px"
+            aria-label="mobile menu open"
+          >
+            <use href="./images/spryte.svg#icon-light-bulb"></use>
+          </svg>
+          <p class="hero-paragraph">With our teachers who write a program
+            for each student, you will be able to make
+            your first sketch after the first lesson.</p>
+          <button class="hero-btn" type="button">Get started</button>
+        </div>
+        </div>
+      </section>
+      <!-- SKILS -->
+    </main>
     <footer class="footer-wrapper"></footer>
   </body>
 </html>
